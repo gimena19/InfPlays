@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="AppMovil.Views.MainMenuPage">
+    <Grid BackgroundColor="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0"
+               Text="Seleccional el deporte que desees"
+               HorizontalOptions="CenterAndExpand"
+               Style="{StaticResource LabelButton}"/>
+        <StackLayout Grid.Row="1">
+            <Button Text="Natación"
+                    Style="{StaticResource ButtonLogin}"
+                    ImageSource="nadador.png"
+                    Command="{Binding NatacionCommand}" />
+        </StackLayout>
+        <StackLayout Grid.Row="3">
+            <Button Text="Levantamiento de pesas"
+                    Style="{StaticResource ButtonRegister}"
+                    ImageSource="pesas.png"
+                    Command="{Binding PesasCommand}" />
+        </StackLayout>
+        <StackLayout Grid.Row="5">
+            <Button Text="Gimnasia"
+                    Style="{StaticResource ButtonGeneral}"
+                    ImageSource="Gimnasia.png"
+                    Command="{Binding GimCommand}" />
+        </StackLayout>
+    </Grid>
+</ContentPage>

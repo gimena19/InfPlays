@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMovil.Views.InterfazUsuario.EntrenamientoPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <Frame CornerRadius="20">
+                <StackLayout>
+                    <Label Text="Prueba DE TITULO"
+                          />
+                    <Button Text="Enterate de las ultimas noticias"
+                            Style="{StaticResource ButtonLogin}" />
+                </StackLayout>
+            </Frame>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Button Grid.Column="0"
+                        Grid.Row="0"
+                        Text="Estilo espalda"
+                        ImageSource=""
+                        Style="{StaticResource ButtonOptions}"
+                        Command="{Binding EspaldaCommand}" />
+                <Button Grid.Column="0"
+                        Grid.Row="1"
+                        Text="Estilo Mariposa"
+                        ImageSource=""
+                        Style="{StaticResource ButtonOptions}"
+                        Command="{Binding MariposaCommand}" />
+                <Button Grid.Column="1"
+                        Grid.Row="0"
+                        Text="Estilo Crol"
+                        Style="{StaticResource ButtonOptions}"
+                        Command="{Binding CrolCommand}" />
+                <Button Grid.Column="1"
+                        Grid.Row="1"
+                        Text="Estilo Braza"
+                        Style="{StaticResource ButtonOptions}"
+                        Command="{Binding BrazaCommand}" />
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

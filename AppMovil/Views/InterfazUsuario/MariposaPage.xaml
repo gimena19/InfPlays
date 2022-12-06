@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="AppMovil.Views.InterfazUsuario.MariposaPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <StackLayout  Grid.Row="1"
+                              Padding="20,40"
+                              BackgroundColor="White">
+                    <Image Grid.Row="0"
+                           Source="Mariposa.png"
+                           WidthRequest="150"
+                           HeightRequest="150"
+                           Margin="0,50" />
+                    <Label Text="Estilo Mariposa"
+                           VerticalOptions="Fill"
+                           HorizontalOptions="CenterAndExpand"
+                           Style="{StaticResource LabelButton}"
+                           FontSize="Title" />
+                    <Frame BackgroundColor="#beige"
+                           Margin="0">
+                        <Label Text="El estilo mariposa o dorsal es un estilo de natación en el que se usan ambos brazos, y la cabeza hacia arriba. Este estilo es esencialmente crol, solo que el nadador flota con la espalda en el agua.​ La secuencia de movimientos es alternativa: un brazo en el aire con la palma de la mano saliendo de debajo de la pierna."
+                               VerticalOptions="End"
+                               HorizontalOptions="CenterAndExpand"
+                               Style="{StaticResource LabelButton}"
+                               FontSize="Small" />
+                    </Frame>
+                    <Frame BackgroundColor="#beige"
+                           Margin="0">
+                        <Label Text="Consiste en llevar los brazos, de forma simultánea, desde las caderas por fuera del agua, flexionando los codos y estirándolos para realizar nuevamente la entrada al agua. La acción de las piernas es similar a la patada del crol, con el matiz de que realizan el movimiento conjuntamente."
+                               VerticalOptions="End"
+                               HorizontalOptions="CenterAndExpand"
+                               Style="{StaticResource LabelButton}"
+                               FontSize="Small" />
+                    </Frame>
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

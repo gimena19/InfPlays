@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="AppMovil.Views.Registrer">
+    <ContentPage.Content>
+        <Grid>
+            <Grid BackgroundColor="#F2F2F2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Image Grid.Row="0"
+                       Source="Log.png"
+                       WidthRequest="100"
+                       HeightRequest="100"
+                       Margin="0,50,0,30" />
+                <StackLayout Grid.Row="1"
+                             Padding="30,0"
+                             BackgroundColor="#F2F2F2">
+                    <Frame BackgroundColor="#49E0D1"
+                           CornerRadius="20">
+                        <StackLayout>
+                            <!-->Email<!-->
+                            <Label Text="Email"
+                                   Style="{StaticResource LabelButton}" />
+                            <Entry Placeholder="Example@gmail.com"
+                                   PlaceholderColor="Gray"
+                                   Keyboard="Email"
+                                   Text="{Binding EmailTxt, Mode=TwoWay}" />
+                            <!-->Password<!-->
+                            <Label Text="Password"
+                                   Style="{StaticResource LabelButton}" />
+                            <Entry Placeholder="***********"
+                                   PlaceholderColor="Gray"
+                                   IsPassword="True"
+                                   Text="{Binding PasswordTxt, Mode=TwoWay}" />
+                            <!-->Full name<!-->
+                            <Label Text="Full Name"
+                                   Style="{StaticResource LabelButton}" />
+                            <Entry Placeholder="Ingrid jimena pinilla calderon"
+                                   PlaceholderColor="Gray"
+                                   Text="{Binding FullnameTxt, Mode=TwoWay}" />
+                            <!-->Age<!-->
+                            <Label Text="Age"
+                                   Style="{StaticResource LabelButton}" />
+                            <Entry Placeholder="19"
+                                   PlaceholderColor="Gray"
+                                   Keyboard="Numeric"
+                                   Text="{Binding AgeTxt, Mode=TwoWay}" />
+                        </StackLayout>
+                    </Frame>
+                    <!-->Button registro<!-->
+                    <Button Text="Registro"
+                            Style="{StaticResource ButtonRegister}"
+                            BorderRadius="20"
+                            HorizontalOptions="Center"
+                            Command="{Binding RegisterCommand}"
+                            IsEnabled="{Binding IsEnabled}" />
+                    <Button Text="Already have an account? Sign up"
+                            Background="transparent"
+                            BorderRadius="20"
+                            HorizontalOptions="Center"
+                            x:Name="BtnLogin"
+                            Clicked="BtnLogin_Clicked" />
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

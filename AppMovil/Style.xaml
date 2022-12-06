@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <Color x:Key="Primary">#1AD3C2</Color>
+    <Color x:Key="Secundary">#FDA314</Color>
+    <Color x:Key="Terciary">#FD4607</Color>
+    <Color x:Key="Fondo">#36BFB1</Color>
+    <Color x:Key="Letter">black</Color>
+    <!---->
+    <Style TargetType="Label">
+        <Setter Property="FontFamily"
+                Value="Fuente"></Setter>
+        <Setter Property="FontSize"
+                Value="Medium"></Setter>
+    </Style>
+    <!---->
+    <Style TargetType="Button">
+        <Setter Property="TextColor"
+                Value="{StaticResource Letter}"></Setter>
+        <Setter Property="FontFamily"
+                Value="Fuente"></Setter>
+    </Style>
+    <!---->
+    <Style TargetType="Entry">
+        <Setter Property="FontFamily"
+                Value="Fuente"></Setter>
+    </Style>
+    <!--label-->
+    <Style x:Key="LabelButton"
+           TargetType="Label">
+        <Setter Property="TextColor"
+                Value="{StaticResource Letter}"></Setter>
+        <Setter Property="HorizontalOptions"
+                Value="CenterAndExpand"></Setter>
+        <Setter Property="FontFamily"
+                Value="Fuente"></Setter>
+    </Style>
+    <!--Button login-->
+    <Style x:Key="ButtonLogin"
+           TargetType="Button">
+        <Setter Property="TextColor"
+                Value="{StaticResource Letter}"></Setter>
+        <Setter Property="BackgroundColor"
+                Value="{StaticResource Secundary}"></Setter>
+        <Setter Property="BorderRadius"
+                Value="20"></Setter>
+    </Style>
+    <!--Button register-->
+    <Style x:Key="ButtonRegister"
+           TargetType="Button">
+        <Setter Property="TextColor"
+                Value="{StaticResource Letter}"></Setter>
+        <Setter Property="BackgroundColor"
+                Value="{StaticResource Primary}"></Setter>
+        <Setter Property="BorderRadius"
+                Value="20"></Setter>
+    </Style>
+    <!--Button general-->
+    <Style x:Key="ButtonGeneral"
+           TargetType="Button">
+        <Setter Property="TextColor"
+                Value="{StaticResource Letter}"></Setter>
+        <Setter Property="BackgroundColor"
+                Value="{StaticResource Terciary}"></Setter>
+        <Setter Property="BorderRadius"
+                Value="20"></Setter>
+    </Style>
+    <!--Button opciones-->
+    <Style x:Key="ButtonOptions"
+           TargetType="Button">
+        <Setter Property="TextColor"
+                Value="{StaticResource Letter}"></Setter>
+        <Setter Property="BackgroundColor"
+                Value="{StaticResource Fondo}"></Setter>
+        <Setter Property="BorderRadius"
+                Value="10"></Setter>
+    </Style>
+</ResourceDictionary>

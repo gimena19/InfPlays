@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="AppMovil.Views.BienvenidaPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <StackLayout  Grid.Row="1"
+                              Padding="20,10"
+                              BackgroundColor="White">
+                    <Image Grid.Row="0"
+                           Source="Log.png"
+                           WidthRequest="150"
+                           HeightRequest="150"
+                           Margin="0,50" />
+                    <Label Text="Welcome to PLAY'S"
+                           VerticalOptions="Fill"
+                           HorizontalOptions="CenterAndExpand"
+                           Style="{StaticResource LabelButton}"
+                           FontSize="Title" />
+                    <Frame BackgroundColor="#FDA314"
+                           Margin="10"
+                           CornerRadius="120">
+                        <Button Text="Log in"
+                                BackgroundColor="White"
+                                BorderColor="White"
+                                TextColor="Black"
+                                HorizontalOptions="Center"
+                                BorderRadius="40"
+                                FontFamily="Fuente1"
+                                x:Name="BtnIrlogin"
+                                Clicked="BtnIrlogin_Clicked" />
+                    </Frame>
+                    <Frame BackgroundColor="#1AD3C2"
+                           Margin="10"
+                           CornerRadius="120">
+                        <Button Text="Create a new Count"
+                                FontFamily="Fuente1"
+                                BackgroundColor="White"
+                                BorderColor="White"
+                                TextColor="Black"
+                                HorizontalOptions="Center"
+                                BorderRadius="70"
+                                x:Name="BtnIrRegistrer"
+                                Clicked="BtnIrRegistrer_Clicked" />
+                    </Frame>
+                    <Label Text="¡Learning sport has never been so much fun!"
+                           VerticalOptions="Fill"
+                           HorizontalOptions="Center"
+                           Style="{StaticResource LabelButton}"
+                           FontSize="Small" />
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

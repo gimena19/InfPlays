@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:locals1="clr-namespace:AppMovil.Views.InterfazUsuario"
+            x:Class="AppMovil.Views.InterfazUsuario.PrincipalPage"
+            NavigationPage.HasNavigationBar="False"
+            BarTextColor="Black" BarBackgroundColor="White" SelectedTabColor="Black" UnselectedTabColor="White"
+            >
+            
+             
+    
+  <!--Pages can be added as references or inline-->
+  <locals1:EntrenamientoPage Title="Plan" />
+  <locals1:UsuarioPage Title="Mio" />
+
+</TabbedPage>

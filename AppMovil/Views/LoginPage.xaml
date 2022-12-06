@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="AppMovil.Views.LoginPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid BackgroundColor="#F2F2F2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Image Grid.Row="0"
+                       Source="Log.png"
+                       WidthRequest="100"
+                       HeightRequest="100"
+                       Margin="0,50,0,30" />
+                <StackLayout Grid.Row="1"
+                             Padding="30,50">
+                    <Frame BackgroundColor="#FFCC7C"
+                           CornerRadius="20">
+                        <StackLayout>
+                            <!---->
+                            <Label Text="Email"
+                                   Style="{StaticResource LabelButton}" />
+                            <Entry Placeholder="Example@gmail.com"
+                                   PlaceholderColor="Gray"
+                                   Text="{Binding EmailTxt, Mode=TwoWay}" />
+                            <!---->
+                            <Label Text="Password"
+                                   Style="{StaticResource LabelButton}" />
+                            <Entry Placeholder="**********"
+                                   PlaceholderColor="Gray"
+                                   IsPassword="True"
+                                   Text="{Binding PasswordTxt, Mode=TwoWay}" />
+                            <Label Text="¿Recuperar contraseña?"
+                                   Style="{StaticResource LabelButton}"
+                                   VerticalOptions="CenterAndExpand"
+                                   FontSize="Small" />
+                        </StackLayout>
+                    </Frame>
+                    <!--buton login-->
+                    <Button Text="Iniciar Sesión"
+                            Style="{StaticResource ButtonLogin}"
+                            TextColor="Black"
+                            HorizontalOptions="Center"
+                            BorderRadius="70"
+                            Command="{Binding LoginCommand}" />
+                    <!---->
+                    <StackLayout Orientation="Horizontal"
+                                 Margin="0,20,0,30"></StackLayout>
+                    <!---->
+                    <StackLayout>
+                        <Button Text="Registrarse"
+                                Background="transparent"
+                                FontSize="Medium"
+                                HorizontalOptions="Center"
+                                x:Name="BtnRegistrar"
+                                Clicked="BtnRegistrar_Clicked" />
+                    </StackLayout>
+                    <!---->
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
